@@ -1,0 +1,19 @@
+.root_boundary {
+  height: 100vh;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 48px;
+
+  .error_boundary {
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+}
