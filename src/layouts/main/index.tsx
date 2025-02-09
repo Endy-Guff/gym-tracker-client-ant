@@ -3,7 +3,7 @@ import {Outlet, useNavigate} from 'react-router-dom';
 
 import {
     BoxPlotOutlined,
-    GroupOutlined,
+    GroupOutlined, UnorderedListOutlined,
 } from '@ant-design/icons';
 import {Layout, Menu} from 'antd';
 import type {MenuProps} from 'antd';
@@ -30,6 +30,11 @@ export const MainLayout: FC = () => {
     };
 
     const getMenuItems = (): MenuProps['items'] => [
+        {
+            icon: createElement(UnorderedListOutlined),
+            key: 'workouts',
+            label: 'Тренировки',
+        },
         {
             icon: createElement(GroupOutlined),
             key: 'groups',
